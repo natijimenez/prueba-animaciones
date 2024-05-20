@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salchitips</title>
+    <!-- AOS JS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Splide JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/01-logos/favicon-32x32.png"/>
+</head>
+
+
+<body>
+    <div id="contenedor-principal">
+
+        <!-- INICIO SECCIÓN NAVBAR -->
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <figure>
+                    <img src="./assets/img/01-logos/logo-salchi-white.png" alt="logo perro salchicha">
+                </figure>
+                <span>salchitips</span>
+            </div>
+            <!-- menú mobile -->
+            <div class="navbar__menu-hamburguesa">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- menú desktop -->
+            <div class="navbar__menu-desktop">
+                    <a href="#inicio">inicio</a>
+                    <a href="#chequeos">chequeos</a>
+                    <a href="#inspeccion">inspección</a>
+                    <a href="#alertas">alertas</a>
+            </div>
+        </nav>
+        <!-- FIN SECCIÓN NAVBAR -->
+
+
+        <!-- INICIO SECCIÓN BANNER -->
+        <div class="banner" id="inicio">
+            <figure>
+                <!-- banner mobile -->
+                <img class="banner-mb" src="./assets/img/02-banner/salchifondo-tablet1.jpg" alt="banner salchitips">
+                <!-- banner desktop -->
+                <img class="banner-desk" src="./assets/img/02-banner/salchifondo-desk1.jpg" alt="banner salchitips">
+            </figure>
+        </div>
+        <!-- FIN SECCIÓN BANNER -->
+
+
+        <!-- INICIO SECCIÓN CHEQUEOS -->
+        <section class="seccion-chequeos" id="chequeos" data-aos="fade-up">
+            <h2 class="titulo-seccion">chequeos veterinarios</h2>
+
+            <div class="contenedor-chequeos__cards">
+                <!-- card 1 -->
+                <div class="chequeo-card">
+                    <figure>
+                        <img src="./assets/img/03-chequeos/01-chequeo.png" alt="imagen 6-8 semanas">
+                    </figure>
+                    <ul class="chequeo-card__texto">
+                        <li>- Exámen Físico</li>
+                        <li>- Vacuna DHPP</li>
+                        <li>- Exámen de heces (parásitos)</li>
+                        <li>- Desparacitación</li>
+                        <li>- Medicación preventiva del gusano del corazón</li>
+                    </ul>
+                </div>
+
+                <!-- card 2 -->
+                <div class="chequeo-card">
+                    <figure>
+                        <img src="./assets/img/03-chequeos/02-chequeo.png" alt="imagen 10-12 semanas">
+                    </figure>
+                    <ul class="chequeo-card__texto">
+                        <li>- Exámen Físico</li>
+                        <li>- Vacuna DHLPP</li>
+                        <li>- Desparacitación</li>
+                        <li>- Vacuna contra la bordetela</li>
+                        <li>- Medicación preventiva del gusano del corazón</li>
+                    </ul>
+                </div>
+
+                <!-- card 3 -->
+                <div class="chequeo-card">
+                    <figure>
+                        <img src="./assets/img/03-chequeos/03-chequeo.png" alt="imagen 14-16 semanas">
+                    </figure>
+                    <ul class="chequeo-card__texto">
+                        <li>- Exámen Físico</li>
+                        <li>- Vacuna DHLPP</li>
+                        <li>- Vacuna contra la bordetela</li>
+                        <li>- Vacuna antirrábica</li>
+                        <li>- Medicación preventiva del gusano del corazón</li>
+                    </ul>
+                </div>
+
+                <!-- card 4 -->
+                <div class="chequeo-card">
+                    <figure>
+                        <img src="./assets/img/03-chequeos/04-chequeo.png" alt="imagen revisión anual">
+                    </figure>
+                    <ul class="chequeo-card__texto">
+                        <li>- Exámen Físico</li>
+                        <li>- Vacuna DHLPP</li>
+                        <li>- Vacuna contra la bordetela</li>
+                        <li>- Vacuna antirrábica</li>
+                        <li>- Desparacitación</li>
+                        <li>- Análisis de sangre</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- FIN SECCIÓN CHEQUEOS -->
+
+
+        <!-- INICIO SECCIÓN INSPECCIÓN REGULAR -->
+        <section class="splide inspeccion" aria-labelledby="carousel-heading" id="inspeccion" data-aos="fade-up">
+            <h2 class="titulo-seccion" id="carousel-heading">Inspección regular</h2>
+
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="./assets/img/04-inspeccion/01-boca.png" alt="boca">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./assets/img/04-inspeccion/02-ojos.png" alt="ojos">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./assets/img/04-inspeccion/03-orejas.png" alt="orejas">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./assets/img/04-inspeccion/04-peso.png" alt="peso">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./assets/img/04-inspeccion/05-patas.png" alt="patas">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./assets/img/04-inspeccion/06-cola.png" alt="cola">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./assets/img/04-inspeccion/07-piel.png" alt="piel">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./assets/img/04-inspeccion/08-pelaje.png" alt="pelaje">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- FIN SECCIÓN INSPECCIÓN REGULAR -->
+
+
+        <!-- INICIO SECCIÓN ALERTAS MAYORES -->
+        <section class="seccion-alertas" id="alertas" data-aos="fade-up">
+            <h2 class="titulo-seccion">alertas mayores<br><span>acudir al veterinario si:</span></h2>
+
+            <div class="alertas">
+                <!-- card 1 -->
+                <div class="alertas__card">
+                    <figure>
+                        <img src="./assets/img/06-problemas-mayores/01-ataques.png" alt="ataques varios">
+                    </figure>
+
+                    <div class="alertas__card-textos">
+                        <span class="alertas__card-titulo">Ataques varios</span>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="alertas__card">
+                    <figure>
+                        <img src="./assets/img/06-problemas-mayores/02-cojera.png" alt="cojera persistente">
+                    </figure>
+
+                    <div class="alertas__card-textos">
+                        <span class="alertas__card-titulo">Cojera persistente</span>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="alertas__card">
+                    <figure>
+                        <img src="./assets/img/06-problemas-mayores/03-colapso.png" alt="colapso">
+                    </figure>
+
+                    <div class="alertas__card-textos">
+                        <span class="alertas__card-titulo">Colapso</span>
+                    </div>
+                </div>
+
+                <!-- card 4 -->
+                <div class="alertas__card">
+                    <figure>
+                        <img src="./assets/img/06-problemas-mayores/04-sed.png" alt="excesivo consumo de agua">
+                    </figure>
+
+                    <div class="alertas__card-textos">
+                        <span class="alertas__card-titulo">Excesivo consumo de agua</span>
+                    </div>
+                </div>
+
+                <!-- card 5 -->
+                <div class="alertas__card">
+                    <figure>
+                        <img src="./assets/img/06-problemas-mayores/05-encias.png" alt="decoloración de encías">
+                    </figure>
+
+                    <div class="alertas__card-textos">
+                        <span class="alertas__card-titulo">Decoloración de encías</span>
+                    </div>
+                </div>
+
+                <!-- card 6 -->
+                <div class="alertas__card">
+                    <figure>
+                        <img src="./assets/img/06-problemas-mayores/06-diarrea.png" alt="diarrea">
+                    </figure>
+
+                    <div class="alertas__card-textos">
+                        <span class="alertas__card-titulo">Diarrea</span>
+                    </div>
+                </div>
+
+                <!-- card 7 -->
+                <div class="alertas__card">
+                    <figure>
+                        <img src="./assets/img/06-problemas-mayores/07-fiebre.png" alt="fiebre">
+                    </figure>
+
+                    <div class="alertas__card-textos">
+                        <span class="alertas__card-titulo">Fiebre</span>
+                    </div>
+                </div>
+
+                <!-- card 8 -->
+                <div class="alertas__card">
+                    <figure>
+                        <img src="./assets/img/06-problemas-mayores/08-hemorragias.png" alt="hemorragias">
+                    </figure>
+
+                    <div class="alertas__card-textos">
+                        <span class="alertas__card-titulo">Hemorragias</span>
+                    </div>
+                </div>
+
+                <!-- card 9 -->
+                <div class="alertas__card">
+                    <figure>
+                        <img src="./assets/img/06-problemas-mayores/17-vomitos.png" alt="vomitos">
+                    </figure>
+
+                    <div class="alertas__card-textos">
+                        <span class="alertas__card-titulo">Vómitos</span>
+                    </div>
+                </div>
+
+                <!-- card 10 -->
+                <div class="alertas__card">
+                    <figure>
+                        <img src="./assets/img/06-problemas-mayores/10-miccion.png" alt="micción no autorizada">
+                    </figure>
+
+                    <div class="alertas__card-textos">
+                        <span class="alertas__card-titulo">Micción no autorizada</span>
+                    </div>
+                </div>
+
+                <!-- card 11 -->
+                <div class="alertas__card">
+                    <figure>
+                        <img src="./assets/img/06-problemas-mayores/11-perdida-apetito.png" alt="perdida apetito">
+                    </figure>
+
+                    <div class="alertas__card-textos">
+                        <span class="alertas__card-titulo">Perdida de apetito</span>
+                    </div>
+                </div>
+
+                <!-- card 12 -->
+                <div class="alertas__card">
+                    <figure>
+                        <img src="./assets/img/06-problemas-mayores/12-perdida-peso.png" alt="perdida de peso">
+                    </figure>
+
+                    <div class="alertas__card-textos">
+                        <span class="alertas__card-titulo">Perdida de peso</span>
+                    </div>
+                </div>
+
+                <!-- card 13 -->
+                <div class="alertas__card">
+                    <figure>
+                        <img src="./assets/img/06-problemas-mayores/13-respiracion.png" alt="problemas respiratorios">
+                    </figure>
+
+                    <div class="alertas__card-textos">
+                        <span class="alertas__card-titulo">Problemas respiratorios</span>
+                    </div>
+                </div>
+
+                <!-- card 14 -->
+                <div class="alertas__card">
+                    <figure>
+                        <img src="./assets/img/06-problemas-mayores/14-oidos.png" alt="secreciones de oídos">
+                    </figure>
+
+                    <div class="alertas__card-textos">
+                        <span class="alertas__card-titulo">Secreciones de oídos</span>
+                    </div>
+                </div>
+
+                <!-- card 15 -->
+                <div class="alertas__card">
+                    <figure>
+                        <img src="./assets/img/06-problemas-mayores/15-ojos.png" alt="secreciones oculares">
+                    </figure>
+
+                    <div class="alertas__card-textos">
+                        <span class="alertas__card-titulo">Secreciones oculares</span>
+                    </div>
+                </div>
+
+                <!-- card 16 -->
+                <div class="alertas__card">
+                    <figure>
+                        <img src="./assets/img/06-problemas-mayores/16-temblores.png" alt="temblores">
+                    </figure>
+
+                    <div class="alertas__card-textos">
+                        <span class="alertas__card-titulo">Temblores</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- FIN SECCIÓN ALERTAS MAYORES -->
+
+
+        <!-- INICIO SECCIÓN FOOTER -->
+        <footer>
+            <div class="footer-iconos">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+            <div class="footer-copy">
+                <span class="copyright">©salchitips 2024</span>
+
+                <figure class="footer-img">
+                    <img src="./assets/img/01-logos/logo-salchi-black.png" alt="logo black">
+                </figure>
+            </div>
+        </footer>
+        <!-- FIN SECCIÓN FOOTER -->
+    </div>
+
+
+    <!-- Script AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Script Splide JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <!-- Script Main JS -->
+    <script src="./assets/js/main.js"></script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/c227f8f709.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

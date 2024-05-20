@@ -1,0 +1,349 @@
+/* ESTILOS GENERALES */
+/* importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+/* estilos variables */
+:root {
+    --font: "Roboto", sans-serif;
+    --font-destacado: "Poetsen One", sans-serif;
+    --white: #ffffff;
+    --dark: #1B1F21;
+    --blueberry: #6B7A8F;
+    --apricot: #f9be4f;
+    --cirtus: #F7C331;
+    --apple: #a2a2a2;
+    --chocolate: #675444;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    scroll-behavior: smooth;
+}
+/**** ESTILOS MOBILE ****/
+p {
+    font-size: 1rem;
+    color: var(--dark);
+}
+.titulo-seccion {
+    font-size: 1.5rem;
+    color: var(--cirtus);
+    text-align: center;
+    padding: 50px 0 30px 0 ;
+}
+.titulo-seccion span {
+    font-size: 1rem;
+}
+#contenedor-principal {
+    display: grid;
+    grid-template-areas:
+    "navbar"
+    "banner"
+    "chequeos"
+    "inspeccion"
+    "alertas"
+    "footer"
+    ;
+    grid-template-columns: 1fr;
+}
+/* estilos sección navbar */
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark);
+    padding: 10px 15px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+}
+.navbar__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.navbar__logo img {
+    width: 40px;
+}
+.navbar__logo span {
+    font-size: 1.2rem;
+    color: var(--white);
+}
+.navbar__menu-hamburguesa i {
+    color: var(--white);
+}
+.navbar__menu-desktop {
+    display: none;
+}
+/* estilos sección banner */
+.banner {
+    grid-area: banner;
+    margin-top: 47px;
+}
+.banner img {
+    width: 100%;
+}
+.banner-desk {
+    display: none;
+}
+/* estilos sección chequeos */
+.seccion-chequeos {
+    grid-area: chequeos;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.contenedor-chequeos__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.chequeo-card {
+    background-color: var(--chocolate);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    height: 350px;
+    border-radius: 15px;
+}
+.chequeo-card img {
+    width: 100%;
+}
+.chequeo-card__texto {
+    text-align: center;
+}
+.chequeo-card__texto li {
+    list-style: none;
+    padding-top: 3px;
+}
+/* estilos sección inspección*/
+.inspeccion {
+    grid-area: inspeccion;
+    width: 98%;
+    margin: auto;
+}
+.splide {
+    width: 100%;
+}
+.splide__list li img {
+    width: 100%;
+}
+.splide__arrow {
+    top: 70%;
+    bottom: 50%;
+}
+/* estilos sección alertas */
+.seccion-alertas {
+    grid-area: alertas;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.alertas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+.alertas__card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 350px;
+    border-bottom: 2px solid #ff73007e;
+}
+.alertas__card figure {
+    max-width: 300px;
+}
+.alertas__card img {
+    width: 100%;
+    border-radius: 10px;
+    filter: grayscale(50%);
+}
+.alertas__card-textos {
+    padding-top: 30px;
+}
+.alertas__card-titulo {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--chocolate);
+}
+.alertas__card-texto {
+    max-width: 300px;
+    text-align: left;
+    padding: 20px;
+    color: var(--apple);
+}
+.alertas__card-texto-tip {
+    text-align: left;
+    padding: 0 20px;
+    color: var(--apple);
+}
+/* estilos sección footer */
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    padding-top: 200px;
+    width: 90%;
+    margin: auto;
+}
+.footer-copy {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+.footer-iconos i {
+    color: var(--dark);
+    font-size: 35px;
+    padding: 0 5px;
+}
+.footer-iconos i:hover {
+    color: var(--apricot);
+    font-size: 35px;
+    padding: 0 5px;
+}
+.footer-img img {
+    width: 70px;
+    margin-left: 20px;
+}
+.copyright {
+    text-align: center;
+}
+
+
+/**** ESTILOS TABLET ****/
+@media (min-width: 576px) {
+    /* estilos sección chequeos */
+    .contenedor-chequeos__cards {
+        grid-template-columns: 1fr 1fr;
+    }
+    .chequeo-card {
+        height: 400px;
+    }
+    /* estilos sección alertas */
+    .alertas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+
+/**** ESTILOS DESKTOP ****/
+@media (min-width: 992px) {
+    /* estilos sección generales */
+    #contenedor-principal {
+        display: grid;
+        grid-template-areas:
+        "navbar banner"
+        "navbar chequeos"
+        "navbar inspeccion"
+        "navbar alertas"
+        "navbar footer"
+        ;
+        grid-template-columns: 1fr 10fr;
+    }
+    /* estilos sección navbar */
+    .navbar__menu-hamburguesa {
+        display: none;
+    }
+    .navbar {
+        flex-direction: column;
+        justify-content: flex-start;
+        left: 0;
+        width: 20vh;
+    }
+    .navbar__menu-desktop {
+        height: calc(100vh - 49px);
+        position: sticky;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        align-items: center;
+        padding-top: 35px;
+    }
+    .navbar__menu-desktop a {
+        color: var(--white);
+        text-decoration: none;
+        cursor: pointer;
+        padding: 10px 0;
+    }
+    .navbar__menu-desktop a:hover {
+        color: var(--cirtus);
+    }
+    /* estilos sección banner */
+    .banner {
+        margin-top: 0;
+    }
+    .banner-mb {
+        display: none;
+    }
+    .banner-desk {
+        display: block;
+    }
+    /* estilos sección chequeos */
+    .seccion-chequeos {
+        width: 70%;
+    }
+    .contenedor-chequeos__cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .chequeo-card {
+        height: 480px;
+    }
+    /* estilos sección inspección*/
+    .inspeccion {
+        width: 70%;
+    }
+    /* estilos sección alertas */
+    .alertas {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 75%;
+    }
+    .alertas__card {
+        filter: grayscale(80%);
+        overflow:hidden;
+        transition: all 1s;
+    }
+    .alertas__card:hover img{
+        transform:scale(1.1);
+        transition: all 1s;
+    }
+    .alertas__card:hover {
+        filter: grayscale(0%);
+    }
+    /* estilos sección footer */
+    footer {
+        width: 70%;
+    }
+}
+
+
+/**** ESTILOS DESKTOP ****/
+@media (min-width: 1024px) {
+    .chequeo-card {
+        height: 380px;
+    }
+}
+
